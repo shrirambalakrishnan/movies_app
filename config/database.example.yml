@@ -1,0 +1,7 @@
+development: &postgres
+  adapter: postgresql
+  encoding: unicode
+  database: movies_db
+  pool: 25
+  username: username
+  password: password
