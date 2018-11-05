@@ -1,24 +1,5 @@
-# README
+# Movies App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An application to play with and understand the GraphQL concepts. This repository is the base on which GraphQL concepts can be implemented as mentioned in my GraphQL blog series.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Link to blog - https://medium.com/reportbee/graphql-blog1-bbdf25ceda39
