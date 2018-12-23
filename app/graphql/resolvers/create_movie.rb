@@ -10,6 +10,16 @@ class Resolvers::CreateMovie < GraphQL::Function
   # the mutation method
   def call(_obj, args, _ctx)
     movie_params  = { name: args[:name], year: args[:year], genre: args[:genre] }
-    Movie.create!(movie_params)
+    movie         = Movie.new(movie_params)
+    movie.save!
+
+    ActionCable.server.broadcast(
+      'movies',
+      name:   movie.name,
+      year:   movie.year,
+      genre:  movie.genre
+    )
+
+    movie
   end
 end
